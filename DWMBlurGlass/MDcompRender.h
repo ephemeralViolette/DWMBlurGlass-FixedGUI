@@ -21,18 +21,18 @@
 
 namespace MDWMBlurGlass
 {
-	class MRender_DComp : public Mui::Render::MRender_D2D
-	{
-	public:
-		bool InitRender(Mui::_m_uint width, Mui::_m_uint height) override;
-		HRESULT InitBackdrop();
+	//class MRender_DComp : public Mui::Render::MRender_D2D
+	//{
+	//public:
+	//	bool InitRender(Mui::_m_uint width, Mui::_m_uint height) override;
+	//	HRESULT InitBackdrop();
 
-	private:
-		com_ptr<abi::comp::ICompositionGraphicsDevice>		m_compositionDevice = nullptr;
-		com_ptr<abi::comp::ICompositionBackdropBrush>		m_brush = nullptr;
-		com_ptr<abi::comp::ICompositor>						m_compositor = nullptr;
-		com_ptr<abi::desktop::IDesktopWindowTarget>			m_backdropTarget = nullptr;
-		com_ptr<abi::comp::ISpriteVisual>					m_backdropVisual = nullptr;
-		com_ptr<abi::comp::ICompositionSurfaceBrush>		m_surfaceBrush = nullptr;
-	};
+	//private:
+	//	com_ptr<abi::comp::ICompositionGraphicsDevice>		m_compositionDevice = nullptr;
+	//	com_ptr<abi::comp::ICompositionBackdropBrush>		m_brush = nullptr;
+	//	com_ptr<abi::comp::ICompositor>						m_compositor = nullptr;
+	//	com_ptr<abi::desktop::IDesktopWindowTarget>			m_backdropTarget = nullptr;
+	//	com_ptr<abi::comp::ISpriteVisual>					m_backdropVisual = nullptr;
+	//	com_ptr<abi::comp::ICompositionSurfaceBrush>		m_surfaceBrush = nullptr;
+	//};
 }

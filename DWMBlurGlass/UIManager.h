@@ -20,22 +20,22 @@
 
 namespace MDWMBlurGlass
 {
-	bool LoadLanguageFileList();
+	//bool LoadLanguageFileList();
 
-	bool LoadBaseLanguageString(std::wstring_view local);
+	//bool LoadBaseLanguageString(std::wstring_view local);
 
-	std::wstring GetBaseLanguageString(std::wstring_view name);
+	//std::wstring GetBaseLanguageString(std::wstring_view name);
 
-	void ClearBaseLanguage();
+	//void ClearBaseLanguage();
 
-	bool LoadLanguageString(Mui::XML::MuiXML* ui, std::wstring_view local, bool init, bool replaceCur = true);
+	//bool LoadLanguageString(Mui::XML::MuiXML* ui, std::wstring_view local, bool init, bool replaceCur = true);
 
-	bool LoadDefualtUIStyle(Mui::XML::MuiXML* ui);
+	//bool LoadDefualtUIStyle(Mui::XML::MuiXML* ui);
 
-	struct LangInfo
-	{
-		std::wstring local;
-		std::wstring author;
-	};
-	LangInfo GetCurrentLangInfo();
+	//struct LangInfo
+	//{
+	//	std::wstring local;
+	//	std::wstring author;
+	//};
+	//LangInfo GetCurrentLangInfo();
 }

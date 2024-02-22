@@ -30,7 +30,7 @@
 
 namespace MDWMBlurGlass
 {
-	using namespace Mui;
+	// using namespace Mui;
 	using namespace winrt;
 
 	auto constexpr g_extTaskName = L"DWMBlurGlass_Extend";
@@ -65,8 +65,8 @@ namespace MDWMBlurGlass
 
 		if (fseek(file, 0L, SEEK_END) != 0) return {};
 
-		const _m_long len = ftell(file);
-		_m_size read = 0;
+		const INT32 len = ftell(file);
+		size_t read = 0;
 		//跳过Unicode文件头
 		if (fseek(file, 2, SEEK_SET) != 0) return {};
 
@@ -74,12 +74,12 @@ namespace MDWMBlurGlass
 		for(;;)
 		{
 			wchar_t wch;
-			if (_m_size len_read = fread(&wch, 1, sizeof(wchar_t), file))
+			if (size_t len_read = fread(&wch, 1, sizeof(wchar_t), file))
 			{
 				read += len_read;
 				str += wch;
 			}
-			if (read + 2 >= (_m_size)len)
+			if (read + 2 >= (size_t)len)
 				break;
 		}
 		fclose(file);

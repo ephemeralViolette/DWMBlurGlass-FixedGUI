@@ -17,19 +17,19 @@
 */
 #pragma once
 #include "framework.h"
-#include <User/Mui_Engine.h>
+//#include <User/Mui_Engine.h>
 
 namespace MDWMBlurGlass
 {
 	inline const std::wstring g_vernum = L"2.0.1";
 
-	Mui::_m_result MainWindow_SrcEventProc(Mui::MWindowCtx*, const Mui::MWndDefEventSource&, Mui::MEventCodeEnum, Mui::_m_param);
+	//Mui::_m_result MainWindow_SrcEventProc(Mui::MWindowCtx*, const Mui::MWndDefEventSource&, Mui::MEventCodeEnum, Mui::_m_param);
 
-	Mui::_m_result MainWindow_EventProc(Mui::MWindowCtx*, Mui::UINotifyEvent event, Mui::Ctrl::UIControl* control, Mui::_m_param param);
+	//Mui::_m_result MainWindow_EventProc(Mui::MWindowCtx*, Mui::UINotifyEvent event, Mui::Ctrl::UIControl* control, Mui::_m_param param);
 
-	bool MainWindow_InitWindow(const Mui::MWindowCtx*, Mui::Ctrl::UIControl* root, Mui::XML::MuiXML* ui);
+	//bool MainWindow_InitWindow(const Mui::MWindowCtx*, Mui::Ctrl::UIControl* root, Mui::XML::MuiXML* ui);
 
-	void MainWindow_Destroy();
+	//void MainWindow_Destroy();
 
-	void ShowColorPicker(Mui::_m_color showColor, bool alpha, std::function<void(bool, Mui::_m_color)> callback);
+	//void ShowColorPicker(Mui::_m_color showColor, bool alpha, std::function<void(bool, Mui::_m_color)> callback);
 }
